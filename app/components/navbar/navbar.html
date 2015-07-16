@@ -1,0 +1,9 @@
+<nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <a class="pure-menu-heading" href="">Kanban</a>
+
+  <ul class="pure-menu-list">
+      <li class="pure-menu-item" ng-repeat="board in ctrl.boards">
+        <a href="#" class="pure-menu-link">{{board.title}}</a>
+      </li>
+  </ul>
+</nav>

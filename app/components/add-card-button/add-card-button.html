@@ -1,0 +1,10 @@
+<div class="add-new-card" ng-class="{flipped: button.flipped}">
+  <div class="front">
+    <button class="pure-button add-button" ng-click="button.flip()">Add new card</button>  
+  </div>
+  <div class="back">
+    <form class="pure-form">
+      <input type="text" ng-model="button.task" focus-when="button.flipped"><button class="pure-button" ng-click="button.addTask()">Add</button>
+    </form>
+  </div>
+</div>

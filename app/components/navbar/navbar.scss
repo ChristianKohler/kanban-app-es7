@@ -1,0 +1,51 @@
+$navbar-height: 50px;
+
+nav.home-menu {
+  line-height: $navbar-height;
+  text-align: center;
+  background: #1976D2;
+  
+  
+  .pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+  }
+  
+  .pure-menu-heading {
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Yesteryear', cursive;
+    text-transform: none;
+  }  
+  
+  .pure-menu-selected a {
+    color: white;
+  }
+  
+  a {
+    padding: 0 10px;
+    color: #6FBEF3;
+  }
+  
+  li a:hover,
+  li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+  }
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ */
+@media (min-width: 48em) {
+    nav.home-menu {
+        text-align: left;
+        
+        ul {
+          float: right;
+        }
+    }
+}
